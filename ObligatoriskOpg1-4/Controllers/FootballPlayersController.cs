@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using ObligatoriskOpg1_4.Managers;
 using ObligatoriskOpg1_4.Models;
 using Microsoft.AspNetCore.Http;
-
+//https://github.com/andersbor/RESTbookStatusCodes/blob/master/RESTbookStatusCodes/Controllers/BooksController.cs
 namespace ObligatoriskOpg1_4.Controllers
 {
     [Route("api/[controller]")]

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using ObligatoriskOpg1_4.Models;
-
+//https://github.com/andersbor/RESTbookFirst/blob/master/RESTbookFirst/Managers/BooksManager.cs
 namespace ObligatoriskOpg1_4.Managers
 {
     public class FootballPlayersManager
@@ -26,6 +26,7 @@ namespace ObligatoriskOpg1_4.Managers
         {
             newFootballPlayer.Id = _nextId++;
             Data.Add(newFootballPlayer);
+
             return newFootballPlayer;
         }
 
@@ -34,6 +35,7 @@ namespace ObligatoriskOpg1_4.Managers
             FootballPlayer footballPlayer = Data.Find(footballPlayer1 => footballPlayer1.Id == id);
             if (footballPlayer == null) return null;
             Data.Remove(footballPlayer);
+
             return footballPlayer;
         }
 
@@ -44,6 +46,7 @@ namespace ObligatoriskOpg1_4.Managers
             footballPlayer.Name = updates.Name;
             footballPlayer.Age = updates.Age;
             footballPlayer.ShirtNumber = updates.ShirtNumber;
+
             return footballPlayer;
         }
     }
